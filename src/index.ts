@@ -1,6 +1,21 @@
-export const a: number = 1
-export const b: number = 2
+import type { Config, Plugin } from 'prettier'
 
-export function sum(a: number, b: number) {
-  return a + b
+export type { Config, Plugin }
+
+export default function prettierConfigs(): Config {
+  const _plugins: (string | Plugin<any>)[] = [
+    'prettier-plugin-packagejson',
+    'prettier-plugin-organize-imports'
+  ]
+
+  return {
+    tabWidth: 2,
+    useTabs: false,
+    semi: false,
+    singleQuote: true,
+    trailingComma: 'none',
+    arrowParens: 'avoid',
+    endOfLine: 'lf',
+    plugins: _plugins
+  }
 }

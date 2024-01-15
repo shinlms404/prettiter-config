@@ -1,17 +1,17 @@
 {
-  "name": "ts-starter",
-  "version": "0.0.4",
-  "description": "A TypeScript starter template",
+  "name": "@shinlms404/prettier-config",
+  "version": "0.0.0",
+  "description": "My Prettier config preset",
   "keywords": [
     "typescript",
     "starter",
     "template"
   ],
-  "homepage": "https://github.com/shinlms404/ts-starter#readme",
-  "bugs": "https://github.com/shinlms404/ts-starter/issues",
+  "homepage": "https://github.com/shinlms404/prettier-config#readme",
+  "bugs": "https://github.com/shinlms404/prettier-config/issues",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shinlms404/ts-starter.git"
+    "url": "git+https://github.com/shinlms404/prettier-config.git"
   },
   "license": "MIT",
   "author": "Charlie Chan <shinlms404@gmail.com>",
@@ -47,14 +47,15 @@
   "lint-staged": {
     "*": "eslint --fix"
   },
+  "dependencies": {
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "prettier-plugin-packagejson": "^2.4.9"
+  },
   "devDependencies": {
     "@shinlms404/eslint-config": "^0.0.7",
     "@types/node": "^20.11.0",
     "bumpp": "^9.2.1",
     "lint-staged": "^15.2.0",
-    "prettier": "^3.2.2",
-    "prettier-plugin-organize-imports": "^3.2.4",
-    "prettier-plugin-packagejson": "^2.4.9",
     "simple-git-hooks": "^2.9.0",
     "sucrase": "^3.35.0",
     "tsup": "^8.0.1",
@@ -62,7 +63,8 @@
     "vitest": "^1.2.0"
   },
   "peerDependencies": {
-    "eslint": "^8.56.0"
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.2"
   },
   "packageManager": "pnpm@8.14.1",
   "publishConfig": {
