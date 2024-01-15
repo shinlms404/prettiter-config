@@ -1,66 +1,63 @@
-# ts-starter
+# @shinlms404/prettier-config
 
+[![npm version](https://badge.fury.io/js/%40shinlms404%2Fprettier-config.svg)](https://badge.fury.io/js/%40shinlms404%2Fprettier-config)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Issues](https://img.shields.io/github/issues/shinlms404/ts-starter.svg)](https://github.com/shinlms404/ts-starter/issues)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/shinlms404/ts-starter/pulls)
 
-A TypeScript starter template for your projects.
+My Prettier config preset
+
+> **Tip:** For an enhanced development experience, it's recommended to use this Prettier configuration in conjunction with [@shinlms404/eslint-config](https://www.npmjs.com/package/@shinlms404/eslint-config). Check out the [eslint-config repository](https://github.com/shinlms404/eslint-config) for more details.
+
+## Installation
+
+```bash
+npm install @shinlms404/prettier-config --save-dev
+```
 
 ## Usage
 
-To use this template, you can follow these steps:
+In your project's `prettier.config.js` file:
 
-1. Clone the repository:
+```js
+import prettierConfigs from '@shinlms404/prettier-config'
 
-```bash
-git clone https://github.com/shinlms404/ts-starter.git your-project-name
+export default prettierConfigs()
 ```
 
-2. Navigate to the project directory:
+## Features
 
-```bash
-cd your-project-name
-```
+- Opinionated Prettier configuration
+- Supports TypeScript
+- Integrates with eslint for a consistent code style
 
-3. Install dependencies:
+## Configuration
 
-```bash
-npm install
-```
+This configuration includes the following plugins:
 
-4. Build the project:
-
-```bash
-npm run build
-```
-
-5. Start coding!
-
-Feel free to customize the template according to your project requirements.
+- [prettier-plugin-organize-imports](https://www.npmjs.com/package/prettier-plugin-organize-imports)
+- [prettier-plugin-packagejson](https://www.npmjs.com/package/prettier-plugin-packagejson)
 
 ## Scripts
 
-- `npm run build`: Build the project using tsup.
-- `npm run lint`: Run ESLint to lint the code.
-- `npm run lint:fix`: Run ESLint with automatic fixes.
-- `npm run prepack`: Run prepackaging tasks.
-- `npm run prepare`: Set up simple-git-hooks.
-- `npm run release`: Bump the version and publish the package.
-- `npm run stub`: Build the project with tsup in esm format.
-- `npm test`: Run vitest for testing.
-- `npm run typecheck`: Run TypeScript type checking.
-- `npm run watch`: Watch for changes and rebuild using tsup.
+- `npm run build`: Build the project using tsup
+- `npm run lint`: Run ESLint
+- `npm run lint:fix`: Run ESLint with the --fix option
+- `npm run prepack`: Run nr build
+- `npm run release`: Bump the version and publish to npm
+- `npm run stub`: Build a TypeScript stub using tsup
+- `npm test`: Run vitest for testing
+- `npm run typecheck`: Run TypeScript type checking
+- `npm run watch`: Watch for changes using tsup
+
+## Contributing
+
+Feel free to open issues and submit pull requests. Contributions are welcome!
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Author
+## Links
 
-- **Charlie Chan**
-  - Email: shinlms404@gmail.com
-  - GitHub: [shinlms404](https://github.com/shinlms404)
-
----
-
-For detailed information on the template, please visit the [GitHub repository](https://github.com/shinlms404/ts-starter).
+- [GitHub Repository](https://github.com/shinlms404/prettier-config)
+- [Issues](https://github.com/shinlms404/prettier-config/issues)
+- [npm Package](https://www.npmjs.com/package/@shinlms404/prettier-config)
