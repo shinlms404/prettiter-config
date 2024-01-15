@@ -1,0 +1,13 @@
+.cache
+.npm
+.eslintcache
+.stylelintcache
+.idea
+.DS_Store
+
+logs
+node_modules/
+dist
+
+*.tgz
+*.log
