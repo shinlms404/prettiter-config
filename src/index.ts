@@ -8,6 +8,9 @@ export default function prettierConfigs(): Config {
     'prettier-plugin-organize-imports'
   ]
 
+  //to-do
+  //ignore
+
   return {
     tabWidth: 2,
     useTabs: false,
@@ -17,5 +20,6 @@ export default function prettierConfigs(): Config {
     arrowParens: 'avoid',
     endOfLine: 'lf',
     plugins: _plugins
+    // ignorePath: '.prettierignore'
   }
 }
