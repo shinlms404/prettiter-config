@@ -1,6 +1,6 @@
-import { expect, test } from 'vitest'
-import { a, b, sum } from '../src'
+import { test } from 'vitest'
+import prettierConfigs from '../src'
 
 test('define', async () => {
-  expect(sum(a, b)).toBe(3)
+  await prettierConfigs()
 })
