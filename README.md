@@ -23,6 +23,41 @@ import prettierConfigs from '@shinlms404/prettier-config'
 export default prettierConfigs()
 ```
 
+Of course I also integrated two packages `prettier-plugin-packagejson` and `prettier-plugin-organize-imports`, which are `true` by default.
+
+```js
+{
+  // Sort the keys of a package.json
+  sortPackageJson?: boolean
+  // The import can automatically sort and remove unused imports
+  organizeImports?: boolean
+}
+```
+
+When you want to disable and not affect the default options
+
+```js
+export default prettierConfigs({
+  overrides: {
+    options: {
+      sortPackageJson: false,
+      organizeImports: false
+    }
+  }
+})
+```
+
+When you are using your own configuration and want to turn on these options
+
+```js
+export default prettierConfigs({
+  sortPackageJson: true,
+  organizeImports: true,
+
+  ...your own configuration
+})
+```
+
 ## Features
 
 - Opinionated Prettier configuration
@@ -38,15 +73,24 @@ This configuration includes the following plugins:
 
 ## Scripts
 
-- `npm run build`: Build the project using tsup
-- `npm run lint`: Run ESLint
-- `npm run lint:fix`: Run ESLint with the --fix option
-- `npm run prepack`: Run nr build
-- `npm run release`: Bump the version and publish to npm
-- `npm run stub`: Build a TypeScript stub using tsup
-- `npm test`: Run vitest for testing
-- `npm run typecheck`: Run TypeScript type checking
-- `npm run watch`: Watch for changes using tsup
+> **Tip:** You need to install `@antfu/ni` and `pnpm` first, otherwise some of the scripts may not work!
+
+Install @antfu/ni
+
+```bash
+npm install @antfu/ni -g
+npm install pnpm -g
+```
+
+- `pnpm run build`: Build the project using tsup
+- `pnpm run lint`: Run ESLint
+- `pnpm run lint:fix`: Run ESLint with the --fix option
+- `pnpm run prepack`: Run nr build
+- `pnpm run release`: Bump the version and publish to npm
+- `pnpm run stub`: Build a TypeScript stub using tsup
+- `pnpm test`: Run vitest for testing
+- `pnpm run typecheck`: Run TypeScript type checking
+- `pnpm run watch`: Watch for changes using tsup
 
 ## Contributing
 
