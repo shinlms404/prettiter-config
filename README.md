@@ -75,7 +75,7 @@ This configuration includes the following plugins:
 
 > **Tip:** You need to install `@antfu/ni` and `pnpm` first, otherwise some of the scripts may not work!
 
-Install @antfu/ni
+Install
 
 ```bash
 npm install @antfu/ni -g
