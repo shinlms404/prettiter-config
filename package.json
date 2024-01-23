@@ -31,10 +31,9 @@
   ],
   "scripts": {
     "build": "tsup --format esm,cjs --clean --dts",
-    "copy-files": "cpy .prettierignore dist",
     "lint": "eslint .",
     "lint:fix": "pnpm run lint --fix",
-    "prepack": "nr build && nr copy-files",
+    "prepack": "nr build",
     "prepare": "simple-git-hooks",
     "release": "bumpp && pnpm publish",
     "stub": "tsup --format esm",
