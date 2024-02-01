@@ -52,7 +52,7 @@
     "prettier-plugin-packagejson": "^2.4.9"
   },
   "devDependencies": {
-    "@shinlms404/eslint-config": "^0.0.13",
+    "@shinlms404/eslint-config": "^0.0.18",
     "@types/node": "^20.11.5",
     "bumpp": "^9.3.0",
     "cpy-cli": "^5.0.0",

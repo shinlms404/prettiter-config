@@ -20,8 +20,8 @@ dependencies:
 
 devDependencies:
   '@shinlms404/eslint-config':
-    specifier: ^0.0.13
-    version: 0.0.13(@vue/compiler-sfc@3.4.15)(eslint@8.56.0)(prettier@3.2.4)(typescript@5.3.3)
+    specifier: ^0.0.18
+    version: 0.0.18(@vue/compiler-sfc@3.4.15)(eslint@8.56.0)(prettier@3.2.4)(typescript@5.3.3)
   '@types/node':
     specifier: ^20.11.5
     version: 20.11.5
@@ -552,8 +552,8 @@ packages:
     dev: true
     optional: true
 
-  /@shinlms404/eslint-config@0.0.13(@vue/compiler-sfc@3.4.15)(eslint@8.56.0)(prettier@3.2.4)(typescript@5.3.3):
-    resolution: {integrity: sha512-UBw9HX2r5TycZI8oj2pAXP/Qb9KZjfmtKVbsE//MHV/aCttFTUMQF2l6xdgAv8pYXZ6bDefLAyBBLOJpAYRrJA==}
+  /@shinlms404/eslint-config@0.0.18(@vue/compiler-sfc@3.4.15)(eslint@8.56.0)(prettier@3.2.4)(typescript@5.3.3):
+    resolution: {integrity: sha512-Iftrclf6MhRtYMigh8DroaV0QHqcQSaLpuVVkjx8w8kKa29LbFs01IEtw2GmxN8DRUlYB2mZIbZ0TsQv8v8Usw==}
     peerDependencies:
       eslint: ^8.56.0
     dependencies:
@@ -571,11 +571,13 @@ packages:
       eslint-plugin-unicorn: 50.0.1(eslint@8.56.0)
       eslint-plugin-unused-imports: 3.0.0(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)
       eslint-plugin-vue: 9.20.1(eslint@8.56.0)
+      eslint-plugin-yml: 1.12.2(eslint@8.56.0)
       eslint-processor-vue-blocks: 0.1.1(@vue/compiler-sfc@3.4.15)(eslint@8.56.0)
       globals: 13.24.0
       jsonc-eslint-parser: 2.4.0
       local-pkg: 0.5.0
       vue-eslint-parser: 9.4.2(eslint@8.56.0)
+      yaml-eslint-parser: 1.2.2
     transitivePeerDependencies:
       - '@types/eslint'
       - '@vue/compiler-sfc'
@@ -1581,6 +1583,22 @@ packages:
       semver: 7.5.4
       vue-eslint-parser: 9.4.2(eslint@8.56.0)
       xml-name-validator: 4.0.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /eslint-plugin-yml@1.12.2(eslint@8.56.0):
+    resolution: {integrity: sha512-hvS9p08FhPT7i/ynwl7/Wt7ke7Rf4P2D6fT8lZlL43peZDTsHtH2A0SIFQ7Kt7+mJ6if6P+FX3iJhMkdnxQwpg==}
+    engines: {node: ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      eslint: '>=6.0.0'
+    dependencies:
+      debug: 4.3.4
+      eslint: 8.56.0
+      eslint-compat-utils: 0.4.1(eslint@8.56.0)
+      lodash: 4.17.21
+      natural-compare: 1.4.0
+      yaml-eslint-parser: 1.2.2
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3527,6 +3545,15 @@ packages:
 
   /yallist@4.0.0:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
+    dev: true
+
+  /yaml-eslint-parser@1.2.2:
+    resolution: {integrity: sha512-pEwzfsKbTrB8G3xc/sN7aw1v6A6c/pKxLAkjclnAyo5g5qOh6eL9WGu0o3cSDQZKrTNk4KL4lQSwZW+nBkANEg==}
+    engines: {node: ^14.17.0 || >=16.0.0}
+    dependencies:
+      eslint-visitor-keys: 3.4.3
+      lodash: 4.17.21
+      yaml: 2.3.4
     dev: true
 
   /yaml@2.3.4:
