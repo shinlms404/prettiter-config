@@ -23,40 +23,12 @@ import prettierConfigs from '@shinlms404/prettier-config'
 export default prettierConfigs()
 ```
 
-```js
-import prettierConfigs from '@shinlms404/prettier-config'
-
-export default prettierConfigs({
-  overrides: {
-    options: {
-      sortPackageJson: false,
-      organizeImports: false
-    }
-  }
-})
-```
-
-When you are using your own configuration and want to turn on these options
-
-```js
-import prettierConfigs from '@shinlms404/prettier-config'
-
-export default prettierConfigs({
-  sortPackageJson: true,
-  organizeImports: true
-
-  //...your own configuration
-})
-```
-
 ### Customs Rules
 
 | Name                                                                              | Description                                                 | Default |
 | :-------------------------------------------------------------------------------- | :---------------------------------------------------------- | :------ |
 | [sortPackageJson](https://www.npmjs.com/package/prettier-plugin-packagejson)      | Sort the keys of a package.json                             | true    |
 | [organizeImports](https://www.npmjs.com/package/prettier-plugin-organize-imports) | The import can automatically sort and remove unused imports | true    |
-
-When you want to disable and not affect the default options
 
 ## Features
 
