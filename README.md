@@ -82,15 +82,15 @@ npm install @antfu/ni -g
 npm install pnpm -g
 ```
 
-- `pnpm run build`: Build the project using tsup
-- `pnpm run lint`: Run ESLint
-- `pnpm run lint:fix`: Run ESLint with the --fix option
-- `pnpm run prepack`: Run nr build
-- `pnpm run release`: Bump the version and publish to npm
-- `pnpm run stub`: Build a TypeScript stub using tsup
-- `pnpm test`: Run vitest for testing
-- `pnpm run typecheck`: Run TypeScript type checking
-- `pnpm run watch`: Watch for changes using tsup
+- `nr build`: Build the project using tsup
+- `nr lint`: Run ESLint
+- `nr lint:fix`: Run ESLint with the --fix option
+- `nr prepack`: Run nr build
+- `nr release`: Bump the version and publish to npm
+- `nr stub`: Build a TypeScript stub using tsup
+- `nlx vitest`: Run vitest for testing
+- `nr typecheck`: Run TypeScript type checking
+- `nr watch`: Watch for changes using tsup
 
 ## Contributing
 
