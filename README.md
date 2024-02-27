@@ -105,3 +105,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [GitHub Repository](https://github.com/shinlms404/prettier-config)
 - [Issues](https://github.com/shinlms404/prettier-config/issues)
 - [npm Package](https://www.npmjs.com/package/@shinlms404/prettier-config)
+
