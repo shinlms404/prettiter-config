@@ -53,8 +53,8 @@
   },
   "devDependencies": {
     "@shinlms404/eslint-config": "^0.1.1",
-    "@types/node": "^20.12.7",
-    "bumpp": "^9.4.0",
+    "@types/node": "^20.12.8",
+    "bumpp": "^9.4.1",
     "cpy-cli": "^5.0.0",
     "lint-staged": "^15.2.2",
     "local-pkg": "^0.5.0",
@@ -62,7 +62,7 @@
     "sucrase": "^3.35.0",
     "tsup": "^8.0.2",
     "typescript": "^5.4.5",
-    "vitest": "^1.5.2"
+    "vitest": "^1.5.3"
   },
   "peerDependencies": {
     "eslint": "^8.56.0",
