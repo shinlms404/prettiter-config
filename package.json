@@ -35,7 +35,7 @@
     "lint:fix": "pnpm run lint --fix",
     "prepack": "nr build",
     "prepare": "simple-git-hooks",
-    "release": "bumpp && pnpm publish --auth-type=legacy",
+    "release": "bumpp && pnpm publish",
     "stub": "tsup --format esm",
     "test": "vitest",
     "typecheck": "tsc --noEmit",
