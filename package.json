@@ -1,6 +1,6 @@
 {
   "name": "@shinlms404/prettier-config",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "My Prettier config preset",
   "keywords": [
     "typescript",
